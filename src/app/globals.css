@@ -1,0 +1,41 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+@layer utilities {
+  
+  .bg-darkBlue {
+    background-color: #0A1F2A; /* Dark Blue */
+  }
+  .bg-blue-600 {
+    background-color: #00AFFF; /* Replace with the specific blue color */
+  }
+  .focus\:ring-2 {
+    outline: 2px solid rgba(99, 102, 241, 0.5); /* Example focus ring */
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
